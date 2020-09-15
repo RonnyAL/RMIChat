@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane  fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="mainPaneLeft" prefHeight="900.0" prefWidth="300.0" style="-fx-background-color: #1D232A;" AnchorPane.bottomAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label fx:id="userListTitle" maxWidth="300.0" prefHeight="95.0" prefWidth="300.0" text="Users (6)" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </Label>
+            <Line fx:id="lineUserList" endX="150.0" layoutX="150.0" layoutY="94.0" startX="-150.0" stroke="#ffffff0d" strokeWidth="8.0" />
+            <ScrollPane fx:id="scrollPaneUserList" focusTraversable="false" hbarPolicy="NEVER" layoutY="118.0" prefHeight="782.0" prefWidth="300.0" style="-fx-background: #1D232A; -fx-background-color: #1D232A;">
+               <content>
+                  <VBox fx:id="vboxUserList" prefHeight="802.0" prefWidth="300.0" spacing="15.0">
+                     <children>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="mainPaneRight" layoutX="300.0" prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: EAEDF1;">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutY="95.0" prefHeight="705.0" prefWidth="900.0" style="-fx-background-color: EAEDF1;">
+               <content>
+                  <VBox fx:id="messageContainer" maxWidth="900.0" minWidth="900.0" prefHeight="705.0" prefWidth="900.0" spacing="15.0" style="-fx-background-color: EAEDF1;">
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <TextArea fx:id="messageInput" layoutY="800.0" prefHeight="100.0" prefWidth="900.0" promptText="Type your message...">
+               <font>
+                  <Font name="Segoe UI Light" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <Line fx:id="lineSeparatorTitle" endX="900.0" layoutY="95.0" stroke="#ebebeb" strokeWidth="4.0" />
+            <Label fx:id="serverName" prefHeight="95.0" text="ChatServer">
+               <font>
+                  <Font name="Segoe UI Semibold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

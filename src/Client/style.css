@@ -1,0 +1,25 @@
+.self-message {
+	-fx-background-color: #4287f5;
+	-fx-text-fill: white;
+	-fx-background-radius: 5px;
+}
+
+.other-message {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-background-radius: 5px;
+}
+
+.name-label, .time-label, .user-list-entry {
+	-fx-font-family: Sergoe UI Light;
+}
+
+.time-label {
+	-fx-font-style: italic;
+}
+
+.user-list-entry {
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+	
+}
